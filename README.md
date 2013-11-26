@@ -8,7 +8,7 @@ Compiling and Running
 ---------------------
 To compile cd into the git repo and run <code>mvn clean package</code>
 
-To run the server run the command <code>java -jar target/gs-handling-form-submission-0.1.0.jar</code>
+To run the server run the command <code>java -jar target/psd3-tech-proto-0.1.0.jar</code>
 
 Once the server is running, visit [http://localhost:8080](http://localhost:8080)
 
