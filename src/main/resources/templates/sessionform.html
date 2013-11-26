@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handing Form Submission</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Form</h1>
+    <form action="#" th:action="@{/}" th:object="${compsession}" method="post">
+    	<p>date: <input type="text" th:field="*{date}" /></p>
+    	<p>time: <input type="text" th:field="*{time}" /></p>
+    	<p>duration: <input type="text" th:field="*{duration}" /></p>
+    	<p>repeatFrequency: <input type="text" th:field="*{repeatFrequency}" /></p>
+    	<p>lecturer: <input type="text" th:field="*{lecturer}" /></p>
+    	<p>maxAttendance: <input type="text" th:field="*{maxAttendance}" /></p>
+    	<p>compulsory: <input type="checkbox" th:field="*{compulsory}" /></p>
+    	<p>venue: <input type="text" th:field="*{venue}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

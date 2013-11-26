@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handing Form Submission</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <p th:text="'date: ' + ${compsession.date}" />
+    <p th:text="'time: ' + ${compsession.time.hour} + ':' + ${compsession.time.min}" />
+    <p th:text="'duration: ' + ${compsession.duration}" />
+    <p th:text="'repeatFrequency: ' + ${compsession.repeatFrequency}" />
+    <p th:text="'lecturer: ' + ${compsession.lecturer}" />
+    <p th:text="'maxAttendance: ' + ${compsession.maxAttendance}" />
+    <p th:text="'compulsory: ' + ${compsession.compulsory}" />
+    <p th:text="'venue: ' + ${compsession.venue}" />
+    
+    <a href="/">Submit another message</a>
+</body>
+</html>
