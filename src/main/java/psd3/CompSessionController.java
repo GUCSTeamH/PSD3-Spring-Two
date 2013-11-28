@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class CompSessionController {
 
-    @RequestMapping(value="/", method=RequestMethod.GET)
+    @RequestMapping(value="/addsession", method=RequestMethod.GET)
     public String sessionForm(Model model) {
         model.addAttribute("compsession", new CompSession());
         return "sessionform";
     }
     
-    @RequestMapping(value="/", method=RequestMethod.POST)
+    @RequestMapping(value="/addsession", method=RequestMethod.POST)
     public String sessionSubmit(@ModelAttribute CompSession compsession, Model model) {
         model.addAttribute("compsession", compsession);
         return "sessionresult";

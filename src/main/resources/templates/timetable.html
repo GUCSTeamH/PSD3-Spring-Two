@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>PSD3 Group H - Sprint Two</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a href="/">Home Page</a>
+	<h1>Select a timeframe to show</h1>
+	<form action="#" th:action="@{/timetablelist}" method="post" id="timetable">
+		<select name="type">
+			<option value="0">Daily</option>
+			<option value="1">Weekly</option>
+			<option value="2">Eternity</option>
+		</select>
+		<p> <input type="submit" value="Submit"/></p>
+	</form>
+</body>
+</html>

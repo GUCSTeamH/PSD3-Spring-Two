@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>PSD3 Group H - Sprint Two</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a href="/">Home Page</a>
+	<table border="1">
+		<tr th:each="compsession : ${timetable.getSessionList()}" >
+		    <td th:text="'Date: ' + ${compsession.date}"> </td>
+    		<td th:text="'Time: ' + ${compsession.time}"> </td>
+		    <td th:text="'Duration: ' + ${compsession.duration}"> </td>
+		    <td th:text="'RepeatFrequency: ' + ${compsession.repeatFrequency}"> </td>
+    		<td th:text="'Lecturer: ' + ${compsession.lecturer}"> </td>
+    		<td th:text="'MaxAttendance: ' + ${compsession.maxAttendance}"> </td>
+    		<td th:text="'Compulsory: ' + ${compsession.compulsory}"> </td>
+    		<td th:text="'Venue: ' + ${compsession.venue}"> </td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head> 
-    <title>Getting Started: Handing Form Submission</title> 
+    <title>PSD3 Group H - Sprint Two</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+<a href="/">Home Page</a>
 	<h1>Result</h1>
 	<h4>Session submitted !</h4>
     <p th:text="'Date: ' + ${compsession.date}" />
-    <p th:text="'Time: ' + ${compsession.time.hour} + ':' + ${compsession.time.min}" />
+    <p th:text="'Time: ' + ${compsession.time}"/>
     <p th:text="'Duration: ' + ${compsession.duration}" />
     <p th:text="'RepeatFrequency: ' + ${compsession.repeatFrequency}" />
     <p th:text="'Lecturer: ' + ${compsession.lecturer}" />
@@ -16,6 +17,6 @@
     <p th:text="'Compulsory: ' + ${compsession.compulsory}" />
     <p th:text="'Venue: ' + ${compsession.venue}" />
     
-    <a href="./sessionform.html">Submit another message</a>
+    <a href="/addsession">Submit another message</a>
 </body>
 </html>

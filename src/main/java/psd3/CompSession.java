@@ -1,8 +1,8 @@
 package psd3;
 
-import java.util.Date;
+// import java.util.Date;
 
-class CompSession {
+public class CompSession {
 	private Date date;
 	private Time time;
 	private int duration;
@@ -12,6 +12,21 @@ class CompSession {
 	private boolean compulsory;
 	private String venue;
 
+	public CompSession() {
+		
+	}
+	
+	public CompSession(Date date, Time time, int duration, int repeatFrequency,String lecturer, int maxAttendance, boolean compulsory, String venue) {
+		this.date = date;
+		this.time = time;
+		this.duration = duration;
+		this.repeatFrequency = repeatFrequency;
+		this.lecturer = lecturer;
+		this.maxAttendance = maxAttendance;
+		this.compulsory = compulsory;
+		this.venue = venue;
+	}
+	
 	public Date getDate() {
 		return date;
 	}

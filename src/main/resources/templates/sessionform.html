@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head> 
-    <title>Getting Started: Handing Form Submission</title> 
+    <title>PSD3 Group H - Sprint Two</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<a href="./main.html"> go back</a>
+<a href="/">Home Page</a>
 	<h1>Session Form</h1>
 	
-    <form action="#" th:action="@{/}" th:object="${compsession}" method="post">
+    <form action="#" th:action="@{/addsession}" th:object="${compsession}" method="post">
     	<p>Date (dd/mm/yyyy): <input type="text" th:field="*{date}" /></p>
     	<p>Time (hh:mm): <input type="text" th:field="*{time}" /></p>
     	<p>Duration: <input type="text" th:field="*{duration}" /></p>
