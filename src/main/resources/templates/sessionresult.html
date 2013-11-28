@@ -6,15 +6,16 @@
 </head>
 <body>
 	<h1>Result</h1>
-    <p th:text="'date: ' + ${compsession.date}" />
-    <p th:text="'time: ' + ${compsession.time.hour} + ':' + ${compsession.time.min}" />
-    <p th:text="'duration: ' + ${compsession.duration}" />
-    <p th:text="'repeatFrequency: ' + ${compsession.repeatFrequency}" />
-    <p th:text="'lecturer: ' + ${compsession.lecturer}" />
-    <p th:text="'maxAttendance: ' + ${compsession.maxAttendance}" />
-    <p th:text="'compulsory: ' + ${compsession.compulsory}" />
-    <p th:text="'venue: ' + ${compsession.venue}" />
+	<h4>Session submitted !</h4>
+    <p th:text="'Date: ' + ${compsession.date}" />
+    <p th:text="'Time: ' + ${compsession.time.hour} + ':' + ${compsession.time.min}" />
+    <p th:text="'Turation: ' + ${compsession.duration}" />
+    <p th:text="'RepeatFrequency: ' + ${compsession.repeatFrequency}" />
+    <p th:text="'Lecturer: ' + ${compsession.lecturer}" />
+    <p th:text="'MaxAttendance: ' + ${compsession.maxAttendance}" />
+    <p th:text="'Compulsory: ' + ${compsession.compulsory}" />
+    <p th:text="'Venue: ' + ${compsession.venue}" />
     
-    <a href="/">Submit another message</a>
+    <a href="./sessionform.html">Submit another message</a>
 </body>
 </html>
