@@ -6,18 +6,19 @@
 </head>
 <body>
 <a href="/">Home Page</a>
-	<h1>Session Form</h1>
-	
+	<hr width="75%" color="#ff0000" size="4" />
+	<h1 align="center">Session Form</h1>
+	<hr width="75%" color="#ff0000" size="4" />
     <form action="#" th:action="@{/addsession}" th:object="${compsession}" method="post">
-    	<p>Date (dd/mm/yyyy): <input type="text" th:field="*{date}" /></p>
-    	<p>Time (hh:mm): <input type="text" th:field="*{time}" /></p>
-    	<p>Duration: <input type="text" th:field="*{duration}" /></p>
-    	<p>RepeatFrequency (per week): <input type="text" th:field="*{repeatFrequency}" /></p>
-    	<p>Lecturer: <input type="text" th:field="*{lecturer}" /></p>
-    	<p>Maximum Attendance : <input type="text" th:field="*{maxAttendance}" /></p>
-    	<p>Compulsory: <input type="checkbox" th:field="*{compulsory}" /></p>
-    	<p>Venue: <input type="text" th:field="*{venue}" /></p>
-        <p> <input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+    	<p  align="center">Date (dd/mm/yyyy): <input type="text" th:field="*{date}" /></p>
+    	<p  align="center">Time (hh:mm): <input type="text" th:field="*{time}" /></p>
+    	<p  align="center">Duration: <input type="text" th:field="*{duration}" /></p>
+    	<p  align="center">RepeatFrequency (per week): <input type="text" th:field="*{repeatFrequency}" /></p>
+    	<p  align="center">Lecturer: <input type="text" th:field="*{lecturer}" /></p>
+    	<p  align="center">Maximum Attendance : <input type="text" th:field="*{maxAttendance}" /></p>
+    	<p  align="center">Compulsory: <input type="checkbox" th:field="*{compulsory}" /></p>
+    	<p  align="center">Venue: <input type="text" th:field="*{venue}" /></p>
+        <p align="center"> <input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
     </form>
 </body>
 </html>

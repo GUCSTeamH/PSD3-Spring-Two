@@ -6,14 +6,16 @@
 </head>
 <body>
 <a href="/">go back</a>
-	<h1>Select a timeframe to show</h1>
-	<form action="#" th:action="@{/timetablelist}" method="post" id="timetable">
+	<hr width="75%" color="#ff0000" size="4" />
+	<h1 align="center">Select a timeframe to show</h1>
+	<hr width="75%" color="#ff0000" size="4" />
+	<form align="center" action="#" th:action="@{/timetablelist}" method="post" id="timetable">
 		<select name="type">
 			<option value="0">Daily</option>
 			<option value="1">Weekly</option>
 			<option value="2">Eternity</option>
 		</select>
-		<p> <input type="submit" value="Submit"/></p>
+		<p> <input type="submit" value="Show"/></p>
 	</form>
 </body>
 </html>
