@@ -7,7 +7,9 @@ Task for PSD3 Sprint Week Two
 Compiling and Running
 ---------------------
 First make sure that Maven is in your PATH. (usually add the \bin folder)
-To compile cd into the git repo and run <code>mvn clean package</code>
+To compile
+- cd into the git repo 
+- run <code>mvn clean package</code>
 
 To run the server run the command <code>java -jar target/psd3-tech-proto-0.1.0.jar</code>
 
