@@ -7,7 +7,8 @@ Task for PSD3 Sprint Week Two
 Compiling and Running
 ---------------------
 First make sure that Maven is in your PATH. (usually add the \bin folder)
-To compile
+<br>
+To compile :
 - cd into the git repo 
 - run <code>mvn clean package</code>
 
@@ -20,11 +21,15 @@ Once the server is running, visit [http://localhost:8080](http://localhost:8080)
 
 *I am not sure if the .project file for eclipse works correctly, but it is added there incase it screws up the repo like it did for the last sprint week*
 
-
+<br>
 Team H:
-
+<br>
 Emilia Vulpe
+<br>
 Michael McDonald
+<br>
 Andrew Tully
+<br>
 Daniela Cretu
+<br>
 Ioannis Cleary
